@@ -28,7 +28,8 @@ def main():
                 else:
                     score = score * 2
             print('Your overall score: {}'.format(score))
-            print(scoreComments[round(score/3)])
+            print(round(score/20*(len(scoreComments)-1)))
+            print(scoreComments[round(score/20*(len(scoreComments)-1))])
             while True:
                 restart = input('Play again? Y/N\n').lower().strip()
                 if (restart == 'y' or restart == 'yes'):
